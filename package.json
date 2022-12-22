@@ -1,8 +1,8 @@
 {
   "name": "vite-mui-ts",
   "version": "0.0.1",
-  "description": "React + TS + Vite + Redux + RTK + MUI + RRD + Prettier => Boilerplate",
   "type": "module",
+  "description": "React + TS + Vite + Redux + RTK + MUI + RRD + Prettier => Boilerplate",
   "license": "MIT",
   "author": "emrecil <info.emrecil@gmail.com>",
   "keywords": [
@@ -41,23 +41,33 @@
     "test:e2e:ci": "vite build && pnpm preview:test 'cypress run --record'"
   },
   "dependencies": {
-    "@mui/icons-material": "^5.10.15",
-    "@emotion/styled": "^11.10.5",
     "@emotion/react": "^11.10.5",
-    "@mui/material": "^5.10.15",
-    "@reduxjs/toolkit": "^1.9.0",
-    "react-router-dom": "^6.4.3",
-    "react-redux": "^8.0.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.1",
+    "@reduxjs/toolkit": "^1.9.1",
+    "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react": "^18.2.0"
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.6.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.2",
-    "@types/react": "^18.0.24",
-    "@types/react-dom": "^18.0.8",
-    "@vitejs/plugin-react": "^2.2.0",
-    "typescript": "^4.6.4",
-    "vite": "^3.2.3",
-    "vitest": "^0.25.3"
+    "eslint-config-standard-with-typescript": "^24.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "@vitejs/plugin-react-swc": "^3.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-import": "^2.26.0",
+    "@types/react-dom": "^18.0.9",
+    "eslint-plugin-n": "^15.6.0",
+    "@types/react": "^18.0.26",
+    "@babel/core": "^7.20.5",
+    "typescript": "^4.9.4",
+    "prettier": "^2.8.1",
+    "eslint": "^8.30.0",
+    "vitest": "^0.26.2",
+    "vite": "^4.0.3"
   }
 }

@@ -1,8 +1,8 @@
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { selectMode } from '../features/user/userSlice';
 import { useSelector } from 'react-redux';
-import * as React from 'react';
 import { PaletteMode } from '@mui/material';
+import * as React from 'react';
 type Props = {
   children?: React.ReactNode;
 };
