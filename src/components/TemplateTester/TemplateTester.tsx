@@ -1,7 +1,9 @@
+import React from 'react';
 import { changeMode, selectMode } from '../../features/userSlice';
-import { Stack, Box, Typography, IconButton } from '@mui/material';
+import { Stack, Box, Typography, IconButton, TypographyVariant, SxProps } from '@mui/material';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import { useDispatch, useSelector } from 'react-redux';
+
 const TemplateTester = () => {
   const dispatch = useDispatch();
   const mode = useSelector(selectMode);
@@ -104,7 +106,7 @@ const TemplateTester = () => {
                     fontSize: { xs: 10, sm: 14, md: 16 },
                     textShadow: mode === 'dark' ? '0px 0px 10px #000' : '0px 0px 10px #fff',
                   },
-                } as any
+                } as SxProps
               }
             >
               <Typography fontWeight="bold">{color}</Typography>
@@ -117,7 +119,7 @@ const TemplateTester = () => {
 
   const typoCards = typographies.map((typo) => (
     <Stack key={typo} gap={1}>
-      <Typography variant={typo as any}>{typo}</Typography>
+      <Typography variant={typo as TypographyVariant}>{typo}</Typography>
     </Stack>
   ));
 

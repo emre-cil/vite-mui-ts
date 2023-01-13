@@ -1,54 +1,59 @@
-import { useState } from 'react';
-import { Box } from '@mui/material';
-import styles from './Counter.module.css';
+import { Box, Button, Stack } from '@mui/material';
 import { useSelector, useDispatch } from 'react-redux';
-import { decrement, increment, selectCount, incrementAsync, incrementByAmount } from '../../features/counterSlice';
+import { decrement, increment, selectCount } from '../../features/counterSlice';
+import React from 'react';
 
-function Counter() {
+const Counter = () => {
   const count = useSelector(selectCount);
   const dispatch = useDispatch();
-  const [incrementAmount, setIncrementAmount] = useState('2');
-  console.log(count);
-  const incrementValue = Number(incrementAmount) || 0;
 
   return (
-    <Box
-      className={styles.wrapper}
+    <Stack
       sx={{
-        py: 10,
-        px: 2,
-        mt: 3,
-        boxShadow: 3,
-        borderRadius: 5,
+        width: '100%',
         backgroundColor: 'grey.100',
+        boxShadow: 1,
+        mt: 2,
+        p: 2,
+        borderRadius: 8,
+        fontSize: 20,
+        button: {
+          fontSize: 20,
+        },
       }}
+      gap={2}
+      direction="row"
+      alignItems="center"
+      justifyContent="center"
     >
-      <div className={styles.row}>
-        <button className={styles.button} aria-label="Decrement value" onClick={() => dispatch(decrement())}>
-          -
-        </button>
-        <span className={styles.value}>{count} </span>
-        <button className={styles.button} aria-label="Increment value" onClick={() => dispatch(increment())}>
-          +
-        </button>
-      </div>
-      <div className={styles.row2}>
-        <input
-          className={styles.textbox}
-          type="number"
-          aria-label="Set increment amount"
-          value={incrementAmount}
-          onChange={(e) => setIncrementAmount(e.target.value)}
-        />
-        <button className={styles.button} onClick={() => dispatch(incrementByAmount(incrementValue))}>
-          Add Amount
-        </button>
-        <button className={styles.asyncButton} onClick={() => dispatch(incrementAsync(incrementValue))}>
-          Add Async
-        </button>
-      </div>
-    </Box>
+      <Button variant="contained" aria-label="Decrement value" onClick={() => dispatch(decrement(1))}>
+        -
+      </Button>
+      <Box
+        sx={{
+          borderRadius: 1,
+          backgroundColor: 'grey.200',
+          boxShadow: 3,
+          p: 1,
+          height: 47,
+          width: 47,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        {count}{' '}
+      </Box>
+      <Button
+        variant="contained"
+        sx={{ backgroundColor: 'primary.main' }}
+        aria-label="Increment value"
+        onClick={() => dispatch(increment(1))}
+      >
+        +
+      </Button>
+    </Stack>
   );
-}
+};
 
 export default Counter;
