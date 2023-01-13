@@ -36,7 +36,7 @@ const Counter = () => {
           boxShadow: 3,
           p: 1,
           height: 47,
-          width: 47,
+          minWidth: 47,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
