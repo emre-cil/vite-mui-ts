@@ -1,8 +1,8 @@
 {
   "name": "vite-mui-ts",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "module",
-  "description": "React + TS + Vite + Redux + RTK + MUI + RRD + Prettier => Boilerplate",
+  "description": "TypeScript + React + Redux + MUI + RRD + ESLint + Prettier => Boilerplate",
   "license": "MIT",
   "author": "emrecil <info.emrecil@gmail.com>",
   "keywords": [
