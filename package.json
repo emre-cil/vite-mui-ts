@@ -44,17 +44,17 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.11.0",
-    "@mui/material": "^5.11.7",
+    "@mui/material": "^5.11.8",
     "@reduxjs/toolkit": "^1.9.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
-    "react-router-dom": "^6.8.0"
+    "react-router-dom": "^6.8.1"
   },
   "devDependencies": {
     "eslint-config-standard-with-typescript": "^34.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.50.0",
-    "@typescript-eslint/parser": "^5.50.0",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
     "@vitejs/plugin-react-swc": "^3.1.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-react": "^7.32.2",
@@ -67,7 +67,7 @@
     "typescript": "^4.9.5",
     "prettier": "^2.8.3",
     "eslint": "^8.33.0",
-    "vitest": "^0.28.3",
+    "vitest": "^0.28.4",
     "vite": "^4.1.1"
   }
 }
