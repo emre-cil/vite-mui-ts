@@ -1,6 +1,6 @@
 import { Box, Button, Stack } from '@mui/material';
 import { useSelector, useDispatch } from 'react-redux';
-import { decrement, increment, selectCount } from '../../features/counterSlice';
+import { decrement, increment, selectCount } from '@/features/counterSlice';
 import React from 'react';
 
 const Counter = () => {

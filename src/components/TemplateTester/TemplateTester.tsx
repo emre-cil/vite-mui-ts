@@ -1,5 +1,5 @@
 import React from 'react';
-import { changeMode, selectMode } from '../../features/userSlice';
+import { changeMode, selectMode } from '@/features/userSlice';
 import { Stack, Box, Typography, IconButton, TypographyVariant, SxProps } from '@mui/material';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import { useDispatch, useSelector } from 'react-redux';

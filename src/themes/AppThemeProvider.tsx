@@ -1,5 +1,5 @@
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
-import { selectMode } from '../features/userSlice';
+import { selectMode } from '@/features/userSlice';
 import { useSelector } from 'react-redux';
 import { PaletteMode } from '@mui/material';
 import * as React from 'react';
