@@ -1,11 +1,30 @@
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { selectMode } from '@/features/userSlice';
 import { useSelector } from 'react-redux';
-import { PaletteMode } from '@mui/material';
+import { PaletteMode, PaletteOptions } from '@mui/material';
 import * as React from 'react';
 type Props = {
   children?: React.ReactNode;
 };
+
+declare module '@mui/material/styles' {
+  // Create gradient type
+  interface Palette {
+    Gradient: {
+      Bronze: string;
+      Silver: string;
+      Gold: string;
+    };
+  }
+  // Extend the palette
+  interface PaletteOptions {
+    Gradient?: {
+      Bronze?: string;
+      Silver?: string;
+      Gold?: string;
+    };
+  }
+}
 
 //children with ReactNode type
 export const AppThemeProvider: React.FC<Props> = ({ children }) => {
@@ -38,6 +57,12 @@ export const AppThemeProvider: React.FC<Props> = ({ children }) => {
           700: mode === 'dark' ? 'hsl(0, 0%, 83%)' : 'hsl(0, 0%, 25%)',
           800: mode === 'dark' ? 'hsl(0, 0%, 90%)' : 'hsl(0, 0%, 15%)',
           900: mode === 'dark' ? 'hsl(0, 10%, 97%)' : 'hsl(0, 0%, 9%)',
+        },
+
+        Gradient: {
+          Bronze: 'linear-gradient(180deg, #9C6D3E 0%, #E8C8A9 100%)',
+          Silver: 'linear-gradient(180deg, #808080 0%, #DFDFDF 100%)',
+          Gold: 'linear-gradient(180deg, #A3873C 0%, #E3D294 100%)',
         },
       },
 
@@ -73,6 +98,16 @@ export const AppThemeProvider: React.FC<Props> = ({ children }) => {
         //overline
       },
       components: {
+        //CSS BODY
+        MuiCssBaseline: {
+          styleOverrides: {
+            body: {
+              backgroundColor: '#000',
+              color: '#fff',
+              height: '100%',
+            },
+          },
+        },
         MuiLink: {
           styleOverrides: {
             root: {
