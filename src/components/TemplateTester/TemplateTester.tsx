@@ -1,6 +1,6 @@
 import React from 'react';
 import { changeMode, selectMode } from '@/features/userSlice';
-import { Stack, Box, Typography, IconButton, TypographyVariant, SxProps } from '@mui/material';
+import { Stack, Box, Typography, IconButton, TypographyVariant, SxProps, Theme } from '@mui/material';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -35,15 +35,34 @@ const TemplateTester = () => {
     },
     {
       type: 'grey',
-      colors: ['.50', '.100', '.200', '.300', '.400', '.500', '.600', '.700', '.800', '.900'],
+      colors: [
+        '.50',
+        '.100',
+        '.200',
+        '.300',
+        '.400',
+        '.500',
+        '.600',
+        '.700',
+        '.800',
+        '.900',
+        '.A100',
+        '.A200',
+        '.A400',
+        '.A700',
+      ],
     },
     {
       type: 'background',
-      colors: ['.default', '.paper', '.opposite', '.light'],
+      colors: ['.default', '.paper', '.opposite'],
     },
     {
       type: 'text',
       colors: ['.primary', '.secondary', '.disabled'],
+    },
+    {
+      type: 'gradient',
+      colors: ['bronze', 'silver', 'gold'],
     },
   ];
   const typographies = [
@@ -99,7 +118,7 @@ const TemplateTester = () => {
                   width: { xs: 62, sm: 100, md: 125 },
                   height: { xs: 62, sm: 100, md: 125 },
                   backgroundColor: cat.type + color,
-                  background: color === 'gradient' && cat.type + color,
+                  background: (theme: Theme) => theme.palette.gradient[color],
                   borderRadius: 1,
                   p: 0.65,
                   '& p': {
