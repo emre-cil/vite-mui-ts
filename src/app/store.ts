@@ -1,4 +1,4 @@
-import userReducer from '@/features/userSlice';
+import userReducer from '@/features/user/userSlice';
 import { configureStore } from '@reduxjs/toolkit';
 import { counterReducer } from '@/features/counterSlice';
 
