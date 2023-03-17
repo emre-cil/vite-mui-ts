@@ -1,7 +1,6 @@
 {
   "name": "vite-mui-ts",
   "version": "1.0.0",
-  "type": "module",
   "description": "TypeScript + React + Redux + MUI + RRD + ESLint + Prettier => Boilerplate",
   "license": "MIT",
   "author": "emrecil <info.emrecil@gmail.com>",
@@ -44,7 +43,7 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@mui/icons-material": "^5.11.11",
-    "@mui/material": "^5.11.12",
+    "@mui/material": "^5.11.13",
     "@reduxjs/toolkit": "^1.9.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -52,7 +51,7 @@
     "react-router-dom": "^6.9.0"
   },
   "devDependencies": {
-    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
     "@typescript-eslint/eslint-plugin": "^5.55.0",
     "@typescript-eslint/parser": "^5.55.0",
     "@vitejs/plugin-react-swc": "^3.2.0",
@@ -63,11 +62,11 @@
     "@types/react-dom": "^18.0.11",
     "eslint-plugin-n": "^15.6.1",
     "@types/react": "^18.0.28",
-    "@babel/core": "^7.21.0",
-    "typescript": "^4.9.5",
+    "@babel/core": "^7.21.3",
+    "typescript": "^5.0.2",
     "prettier": "^2.8.4",
     "eslint": "^8.36.0",
-    "vitest": "^0.29.2",
-    "vite": "^4.1.4"
+    "vitest": "^0.29.3",
+    "vite": "^4.2.0"
   }
 }
