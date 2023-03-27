@@ -1,12 +1,11 @@
 import React from 'react';
-import { changeMode, selectMode } from '@/features/user/userSlice';
+import { changeMode } from '@/features/user/userSlice';
 import { Stack, Box, Typography, IconButton, TypographyVariant, SxProps, Theme } from '@mui/material';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
-import { useDispatch, useSelector } from 'react-redux';
-
+import { useAppDispatch, useAppSelector } from '@/app/store';
 const TemplateTester = () => {
-  const dispatch = useDispatch();
-  const mode = useSelector(selectMode);
+  const dispatch = useAppDispatch();
+  const mode = useAppSelector((state) => state.user.mode);
 
   const colors = [
     {

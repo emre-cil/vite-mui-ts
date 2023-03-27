@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import type { RootState } from '@/app/store';
+
 const initialState = {
   token: null,
   user: null,
@@ -34,11 +34,5 @@ export const userSlice = createSlice({
 });
 
 export const { setCredentials, setToken, changeMode } = userSlice.actions;
-
-export const selectToken = (state: RootState) => state.user.token;
-
-export const selectUser = (state: RootState) => state.user.user;
-
-export const selectMode = (state: RootState) => state.user.mode;
 
 export default userSlice.reducer;

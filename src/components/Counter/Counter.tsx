@@ -1,11 +1,11 @@
-import { Box, Button, Stack } from '@mui/material';
-import { useSelector, useDispatch } from 'react-redux';
-import { decrement, increment, selectCount } from '@/features/counterSlice';
 import React from 'react';
+import { Box, Button, Stack } from '@mui/material';
+import { decrement, increment } from '@/features/counterSlice';
+import { useAppDispatch, useAppSelector } from '@/app/store';
 
 const Counter = () => {
-  const count = useSelector(selectCount);
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
+  const count = useAppSelector((state) => state.counter.count);
 
   return (
     <Stack

@@ -1,6 +1,5 @@
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
-import { selectMode } from '@/features/user/userSlice';
-import { useSelector } from 'react-redux';
+import { useAppSelector } from '@/app/store';
 import { PaletteMode } from '@mui/material';
 import * as React from 'react';
 type Props = {
@@ -28,7 +27,7 @@ declare module '@mui/material/styles' {
 
 //children with ReactNode type
 export const AppThemeProvider: React.FC<Props> = ({ children }) => {
-  const mode = useSelector(selectMode);
+  const mode = useAppSelector((state) => state.user.mode);
 
   const theme = responsiveFontSizes(
     createTheme({

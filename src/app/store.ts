@@ -1,17 +1,25 @@
-import userReducer from '@/features/user/userSlice';
 import { configureStore } from '@reduxjs/toolkit';
+import { apiSlice } from './api/apiSlice';
+import { useDispatch, useSelector, TypedUseSelectorHook } from 'react-redux';
+import userReducer from '@/features/user/userSlice';
 import { counterReducer } from '@/features/counterSlice';
 
-export const store = configureStore({
+const store = configureStore({
   reducer: {
+    [apiSlice.reducerPath]: apiSlice.reducer,
     // Add your reducers here
     counter: counterReducer,
     user: userReducer,
   },
-  devTools: true,
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(apiSlice.middleware),
 });
 
-// Infer the `RootState` and `AppDispatch` types from the store itself
 export type RootState = ReturnType<typeof store.getState>;
-// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
+
 export type AppDispatch = typeof store.dispatch;
+
+export const useAppDispatch: () => AppDispatch = useDispatch;
+
+export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
+
+export default store;
