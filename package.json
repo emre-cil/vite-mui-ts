@@ -1,0 +1,72 @@
+{
+  "name": "vite-mui-ts",
+  "version": "1.0.0",
+  "description": "TypeScript + React + Redux + MUI + RRD + ESLint + Prettier => Boilerplate",
+  "license": "MIT",
+  "author": "emrecil <info.emrecil@gmail.com>",
+  "keywords": [
+    "react",
+    "boilerplate",
+    "typescript",
+    "starter",
+    "vite",
+    "redux",
+    "material-ui",
+    "rrd",
+    "prettier"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emre-cil/vite-mui-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/emre-cil/vite-mui-ts/issues"
+  },
+  "homepage": "https://github.com/emre-cil/vite-mui-ts#readme",
+  "scripts": {
+    "dev": "vite --open",
+    "start": "vite --open",
+    "host": "vite --open --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
+    "format": "prettier \"src/**/*.{js,jsx,ts,tsx,css,scss}\" --write",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:cover": "vitest run --coverage",
+    "test:e2e": "pnpm preview:test 'cypress open'",
+    "test:e2e:headless": "pnpm preview:test 'cypress run'",
+    "test:e2e:ci": "vite build && pnpm preview:test 'cypress run --record'"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.11.1"
+  },
+  "devDependencies": {
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "@typescript-eslint/parser": "^5.59.6",
+    "@vitejs/plugin-react-swc": "^3.3.1",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-import": "^2.27.5",
+    "@types/react-dom": "^18.2.4",
+    "eslint-plugin-n": "^16.0.0",
+    "@types/react": "^18.2.6",
+    "@babel/core": "^7.21.8",
+    "typescript": "^5.0.4",
+    "prettier": "^2.8.8",
+    "eslint": "^8.40.0",
+    "vitest": "^0.31.0",
+    "vite": "^4.3.6"
+  }
+}
