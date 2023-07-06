@@ -2,7 +2,7 @@
 
 TypeScript + React + Redux + MUI + RRD + ESLint + Prettier
 
-[![vite-mui-ts](https://iili.io/HY1orrl.md.png)](https://freeimage.host/i/HY1orrl)
+![vite-mui-ts](https://i.ibb.co/j8JSrhV/Screenshot-2023-07-06-121352.png)
 
 ### Getting Started
 
