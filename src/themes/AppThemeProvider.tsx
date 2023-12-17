@@ -1,7 +1,8 @@
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { useAppSelector } from '@/app/store';
 import { PaletteMode } from '@mui/material';
-import * as React from 'react';
+import React from 'react';
+
 type Props = {
   children?: React.ReactNode;
 };
@@ -138,8 +139,7 @@ export const AppThemeProvider: React.FC<Props> = ({ children }) => {
           secondary: '#999999',
           disabled: '#C3C1BD',
         },
-    
-  
+
         grey: {
           50: mode === 'dark' ? 'hsl(0, 0%, 10%)' : 'hsl(0, 5%, 95%)',
           100: mode === 'dark' ? 'hsl(0, 0%, 20%)' : 'hsl(0, 0%, 90%)',

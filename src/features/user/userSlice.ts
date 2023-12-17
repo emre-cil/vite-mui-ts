@@ -6,8 +6,8 @@ const initialState = {
   mode: localStorage.getItem('mode')
     ? localStorage.getItem('mode')
     : window.matchMedia('(prefers-color-scheme: dark)').matches
-    ? 'dark'
-    : 'light',
+      ? 'dark'
+      : 'light',
 };
 
 export const userSlice = createSlice({

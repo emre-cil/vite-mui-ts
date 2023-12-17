@@ -42,29 +42,29 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.14.19",
-    "@mui/material": "^5.14.20",
+    "@mui/icons-material": "^5.15.0",
+    "@mui/material": "^5.15.0",
     "@reduxjs/toolkit": "^2.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-redux": "^9.0.3",
-    "react-router-dom": "^6.20.1"
+    "react-redux": "^9.0.4",
+    "react-router-dom": "^6.21.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.13.2",
-    "@typescript-eslint/parser": "^6.13.2",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-import": "^2.29.0",
-    "@types/react-dom": "^18.2.17",
-    "@types/react": "^18.2.43",
-    "@babel/core": "^7.23.5",
+    "eslint-plugin-import": "^2.29.1",
+    "@types/react-dom": "^18.2.18",
+    "@types/react": "^18.2.45",
+    "@babel/core": "^7.23.6",
     "typescript": "^5.3.3",
     "prettier": "^3.1.1",
-    "eslint": "^8.55.0",
+    "eslint": "^8.56.0",
     "vitest": "^1.0.4",
-    "vite": "^5.0.7"
+    "vite": "^5.0.10"
   }
 }
