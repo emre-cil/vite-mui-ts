@@ -28,32 +28,6 @@ pnpm install
 pnpm dev
 ```
 
-#### Paths
-
-Application using absolute paths
-Example: '@/components/Counter/Counter';
-
-if you don't want to use you can remove these lines from
-
-> vite.config.ts
-
-```
- resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src'),
-    },
-  },
-```
-
-> tsconfig.json
-
-```
-"paths": {
-      "@/*": ["./*"]
-    }
-```
-
-
 ### Scripts
 
 | Script        | Description                        |
@@ -67,4 +41,7 @@ if you don't want to use you can remove these lines from
 | pnpm test     | Run tests                          |
 
 ### Check List
-````
+
+```
+
+```

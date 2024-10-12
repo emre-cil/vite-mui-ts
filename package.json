@@ -40,31 +40,27 @@
     "test:e2e:ci": "vite build && pnpm preview:test 'cypress run --record'"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.5",
-    "@mui/icons-material": "^5.15.21",
-    "@mui/material": "^5.15.21",
-    "@reduxjs/toolkit": "^2.2.6",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.1.3",
+    "@mui/material": "^6.1.3",
+    "@reduxjs/toolkit": "^2.2.8",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-redux": "^9.1.2",
-    "react-router-dom": "^6.24.0"
+    "react-router-dom": "^6.27.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.7",
-    "@types/node": "^20.14.9",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@typescript-eslint/eslint-plugin": "^7.15.0",
-    "@typescript-eslint/parser": "^7.15.0",
-    "eslint-plugin-react": "^7.34.3",
-    "@vitejs/plugin-react-swc": "^3.7.0",
-    "eslint": "^9.6.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-react-refresh": "^0.4.7",
-    "prettier": "^3.3.2",
-    "typescript": "^5.5.3",
-    "vite": "^5.3.2",
-    "vitest": "^1.6.0"
+    "@eslint/js": "^9.12.0",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react-swc": "^3.7.1",
+    "eslint": "^9.12.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.12",
+    "globals": "^15.11.0",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.8.1",
+    "vite": "^5.4.8"
   }
 }
